@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Upload</title>
+  </head>
+  <style>
+    body{
+      margin: auto;
+      text-align: center;
+      border-radius: 100px;
+      border-style: hidden;
+      border: 10px solid #73AD21;
+      padding: 50px;
+      width: 200px;
+      height: 150px;
+      background-color: rgb(49, 80, 70);
+    }
+  </style>
+  <body>
+    <h1 style="color: antiquewhite ; font-size: 30px; font-weight: 400; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Bird Classification</h1>
+    <h1 style="color: rgb(208, 208, 112); font-size: 20px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Upload an Image</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <input type="file" name="file"  />
+      <input type="submit" value="Upload" style="background-color: #04AA6D; border: none; color: white; padding: 16px 32px; text-decoration: none; margin: 4px 2px; cursor: pointer; border-radius: 12px;"/>
+      <h1>{{Data}}</h1>
+    </form>
+  </body>
+</html>
